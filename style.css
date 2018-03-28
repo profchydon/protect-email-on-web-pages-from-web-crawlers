@@ -1,0 +1,13 @@
+html { padding: 35px; }
+
+body { margin: 40px; font-family: georgia; font-size: 16px; line-height: 22px; background-color: rgba(13, 66, 17, 0.92);  }
+
+article { border-left: 20px solid #76e092; padding: 30px 50px 8px 35px; background-color: #fff; }
+
+h2 { margin: 0px 0px 12px 0px; }
+
+p { margin: 0px 0px 16px 0px; }
+
+.e-l { color: #009cf7; background: url(envelope.png) no-repeat 0px 4px; background-size: 20px 12px; padding-left: 28px; }
+
+.content { margin: 50px 0px; }
