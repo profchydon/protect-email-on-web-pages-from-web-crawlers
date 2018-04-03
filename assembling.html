@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<article>
+			<h2>Option 5: Detecting and assembling links with JavaScript </h2>
+
+			<p class="content">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			</p>
+
+			<p><a class="e-l" href="#" data-ep1="support" data-ep2="tutorial" data-ep3="com">Email me</a></p>
+			<p><a class="e-l" href="#" data-ep1="tutors" data-ep2="tutorial" data-ep3="com">Email me</a></p>
+			<p><a class="e-l" href="#" data-ep1="help" data-ep2="tutorial" data-ep3="com">Email me</a></p>
+
+		</article>
+
+		<script type="text/javascript">
+
+			var elinks = document.getElementsByClassName('e-l');
+			var total_elinks = elinks.length;
+			for( var i=0; i < total_elinks; i++ ){
+				var part1 = elinks[i].getAttribute('data-ep1');
+				var part2 = elinks[i].getAttribute('data-ep2');
+				var part3 = elinks[i].getAttribute('data-ep3');
+				var newAddress = part1+'@'+part2+'.'+part3;
+				elinks[i].setAttribute('href' , 'mailto:'+newAddress);
+				elinks[i].innerHTML = newAddress;
+			}
+
+		</script>
+
+	</body>
+</html>
